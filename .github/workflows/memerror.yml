@@ -33,6 +33,10 @@ jobs:
         run: |
           git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.REMPO }} -b master source
 
+      - name: install docker
+        run: |
+          brew install docker
+
       - name: Compile The Mirroring Docker Container
         run: |
           cd source || exit 1
