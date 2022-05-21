@@ -36,7 +36,9 @@ jobs:
       - name: install docker
         run: |
           brew install docker
-          systemctl start docker
+          brew install colima
+          colima start
+          docker ps -a
 
       - name: Compile The Mirroring Docker Container
         run: |
