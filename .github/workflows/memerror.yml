@@ -16,6 +16,8 @@ jobs:
   build:
     runs-on: macos-10.15
 
+run: hdiutil attach Docker.dmg
+
     steps:
       - name: Checkout
         uses: actions/checkout@main
