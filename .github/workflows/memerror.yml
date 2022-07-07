@@ -31,7 +31,7 @@ jobs:
       - uses: rokibhasansagar/slimhub_actions@main
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.REMPO }} -b master source
+          git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.REMPO }} -b qbit source
 
       - name: Compile The Mirroring Docker Container
         run: |
